@@ -2,7 +2,7 @@ import React from "react";
 import {selectTitle} from './trackSlice'
 import { useSelector, useDispatch } from 'react-redux';
 
-export function Track () {
+export const Track = () => {
 
     const title = useSelector(selectTitle);
 
