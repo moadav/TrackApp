@@ -1,8 +1,8 @@
+import {trackInfo} from './trackData'
 
-
-export function fetchTrackData(amount = 1) {
+export function fetchTrackData() {
     return new Promise((resolve) =>
-    resolve({ data: amount })
+    resolve({ data: trackInfo })
     );
   }
   
