@@ -1,0 +1,31 @@
+.rapportBorder{
+    border: solid black 
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+}
+.totals{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.trackItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.trackItems > a{
+    margin: 1em;
+
+}
+p,h2,a{
+    text-align: center;
+}
+

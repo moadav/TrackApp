@@ -1,22 +1,39 @@
-import {useEffect, useState} from "react";
-import {selectTitle, getTrackDataAsync, selectTracks} from './trackSlice'
-import { useSelector, useDispatch } from 'react-redux';
-import TrackRapportItem from "../../app/components/TrackRapportItem";
+import { useEffect } from "react";
+import { getTrackDataAsync, selectTracks } from "./trackSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { NavLink } from "react-router-dom";
+import "./track.css"
 
 export const Track = () => {
-    const title = useSelector(selectTitle);
-    const tracks = useSelector(selectTracks);
-    const dispatch = useDispatch();
+  const tracks = useSelector(selectTracks);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getTrackDataAsync());
+  }, []);
 
-    useEffect( () => {
-        dispatch(getTrackDataAsync())
+  return (
+    <>
+        <h1>Reports</h1>
 
-    }, [])
-
-    return (<>
-    <button >sdsadsa</button>
-    <p> {title+2}</p>
-    
-    {tracks.length > 0 ? tracks.map( (item, index) => <TrackRapportItem key={index}  trackRapport = {item}/>) : []}
-    </>)
-}
+      
+      <div className="a">
+      <ul>
+        {tracks.length > 0
+          ? tracks.map((item, index) => (
+              <li key={index}>
+                <NavLink
+                  key={index}
+                  to={"/rapport/" + item.TrainReportNr}
+                  state={{ TrackRapport: item }}
+                >
+                  {" "}
+                  Report: {item.TrainReportNr}
+                </NavLink>
+              </li>
+            ))
+          : ""}
+      </ul>
+      </div>
+    </>
+  );
+};

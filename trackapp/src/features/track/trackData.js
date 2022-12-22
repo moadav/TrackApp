@@ -8,6 +8,7 @@ export const trackInfo = [
         DestTrack:5,
         Company: "VY",
         Date: "2022-12-21",
+        TrackArrival:3,
         TrainDetails: [
             {
                 Lon: 59.920569,
@@ -19,9 +20,12 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.04,
                     Date:"2022-05-12",
+                },
+                {
                     TrackDeviation: 0.08,
                     Date:"2022-08-12",
                 }
+                
             ]
             },
             {
@@ -34,11 +38,16 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.03,
                     Date:"2021-11-12",
+                },
+                {
                     TrackDeviation: 0.08,
                     Date:"2022-04-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2022-08-12",
                 }
+                
             ]
             },
             {
@@ -51,8 +60,12 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.05,
                     Date:"2021-06-12",
+                },
+                {
                     TrackDeviation: 0.09,
                     Date:"2022-02-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2022-08-12",
                 }
@@ -68,8 +81,12 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.05,
                     Date:"2021-06-12",
+                },
+                {
                     TrackDeviation: 0.09,
                     Date:"2022-02-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2022-08-12",
                 }
@@ -85,12 +102,20 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.05,
                     Date:"2021-02-12",
+                },
+                {
                     TrackDeviation: 0.09,
                     Date:"2021-05-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2021-11-12",
+                },
+                {
                     TrackDeviation: 0.17,
                     Date:"2022-02-12",
+                },
+                {
                     TrackDeviation: 0.23,
                     Date:"2022-08-12",
                 }
@@ -105,14 +130,24 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.02,
                     Date:"2021-02-12",
+                },
+                {
                     TrackDeviation: 0.05,
                     Date:"2021-05-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2021-11-12",
+                },
+                {
                     TrackDeviation: 0.17,
                     Date:"2022-02-12",
+                },
+                {
                     TrackDeviation: 0.23,
                     Date:"2022-08-12",
+                },
+                {
                     TrackDeviation: 0.27,
                     Date:"2022-11-12",
                 }
@@ -128,10 +163,16 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.04,
                     Date:"2021-02-12",
+                },
+                {
                     TrackDeviation: 0.05,
                     Date:"2021-05-12",
+                },
+                {
                     TrackDeviation: 0.12,
                     Date:"2021-02-12",
+                },
+                {
                     TrackDeviation: 0.17,
                     Date:"2022-08-12",
                 }
@@ -147,6 +188,8 @@ export const trackInfo = [
                 {
                     TrackDeviation: 0.04,
                     Date:"2022-02-12",
+                },
+                {
                     TrackDeviation: 0.09,
                     Date:"2022-08-12",
                 }

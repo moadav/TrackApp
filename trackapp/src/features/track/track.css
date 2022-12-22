@@ -1,0 +1,13 @@
+.a {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5em solid black;
+  width: 100%;
+  flex-direction: column;
+  font-size: 21px;
+  background-color: rgb(134, 117, 117);
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}

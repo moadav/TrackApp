@@ -2,7 +2,6 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {fetchTrackData} from './trackAPI';
 
 const initialState = {
-    title: "tester",
     tracks: [],
 }
 export const getTrackDataAsync = createAsyncThunk(
